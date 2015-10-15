@@ -10,4 +10,6 @@
 
 @interface InvestmentsViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *investments;
+
 @end

@@ -15,6 +15,53 @@
 		4250F7131BCFFB09005641A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250F7111BCFFB09005641A2 /* LaunchScreen.storyboard */; };
 		4250F71E1BCFFB0A005641A2 /* InvestShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250F71D1BCFFB0A005641A2 /* InvestShareTests.m */; };
 		4250F7291BCFFB0A005641A2 /* InvestShareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250F7281BCFFB0A005641A2 /* InvestShareUITests.m */; };
+		800DD4E81BD0089400180039 /* InvestmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800DD4E71BD0089400180039 /* InvestmentsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		800DD4EC1BD00DBF00180039 /* InvestmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 800DD4EB1BD00DBF00180039 /* InvestmentCell.m */; settings = {ASSET_TAGS = (); }; };
+		800DD4EF1BD025AD00180039 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 800DD4EE1BD025AD00180039 /* Helper.m */; settings = {ASSET_TAGS = (); }; };
+		80A0D1D11BD02FC200B52FAE /* 001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1A91BD02FC100B52FAE /* 001.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1D21BD02FC200B52FAE /* 002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1AA1BD02FC100B52FAE /* 002.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1D31BD02FC200B52FAE /* 003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1AB1BD02FC100B52FAE /* 003.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1D41BD02FC200B52FAE /* 004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1AC1BD02FC100B52FAE /* 004.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1D51BD02FC200B52FAE /* 005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1AD1BD02FC100B52FAE /* 005.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1D61BD02FC200B52FAE /* 006.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1AE1BD02FC100B52FAE /* 006.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1D71BD02FC200B52FAE /* 007.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1AF1BD02FC100B52FAE /* 007.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1D81BD02FC200B52FAE /* 008.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1B01BD02FC100B52FAE /* 008.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1D91BD02FC200B52FAE /* 009.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1B11BD02FC100B52FAE /* 009.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1DA1BD02FC200B52FAE /* 010.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1B21BD02FC100B52FAE /* 010.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1DB1BD02FC200B52FAE /* 011.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1B31BD02FC100B52FAE /* 011.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1DC1BD02FC200B52FAE /* 012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1B41BD02FC100B52FAE /* 012.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1DD1BD02FC200B52FAE /* 013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1B51BD02FC100B52FAE /* 013.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1DE1BD02FC200B52FAE /* 014.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1B61BD02FC100B52FAE /* 014.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1DF1BD02FC200B52FAE /* 015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1B71BD02FC100B52FAE /* 015.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1E01BD02FC200B52FAE /* 016.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1B81BD02FC100B52FAE /* 016.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1E11BD02FC200B52FAE /* 017.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1B91BD02FC100B52FAE /* 017.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1E21BD02FC200B52FAE /* 018.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1BA1BD02FC100B52FAE /* 018.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1E31BD02FC200B52FAE /* 019.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1BB1BD02FC100B52FAE /* 019.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1E41BD02FC200B52FAE /* 020.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1BC1BD02FC100B52FAE /* 020.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1E51BD02FC200B52FAE /* 021.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1BD1BD02FC100B52FAE /* 021.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1E61BD02FC200B52FAE /* 022.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1BE1BD02FC100B52FAE /* 022.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1E71BD02FC200B52FAE /* 023.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1BF1BD02FC100B52FAE /* 023.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1E81BD02FC200B52FAE /* 024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1C01BD02FC100B52FAE /* 024.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1E91BD02FC200B52FAE /* 025.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1C11BD02FC100B52FAE /* 025.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1EA1BD02FC200B52FAE /* 026.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1C21BD02FC100B52FAE /* 026.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1EB1BD02FC200B52FAE /* 027.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1C31BD02FC100B52FAE /* 027.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1EC1BD02FC200B52FAE /* 028.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1C41BD02FC100B52FAE /* 028.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1ED1BD02FC200B52FAE /* 029.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1C51BD02FC100B52FAE /* 029.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1EE1BD02FC200B52FAE /* 030.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1C61BD02FC100B52FAE /* 030.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1EF1BD02FC200B52FAE /* 031.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1C71BD02FC100B52FAE /* 031.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1F01BD02FC200B52FAE /* 032.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1C81BD02FC100B52FAE /* 032.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1F11BD02FC200B52FAE /* 033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1C91BD02FC100B52FAE /* 033.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1F21BD02FC200B52FAE /* 034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1CA1BD02FC100B52FAE /* 034.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1F31BD02FC200B52FAE /* 035.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1CB1BD02FC100B52FAE /* 035.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1F41BD02FC200B52FAE /* 036.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1CC1BD02FC100B52FAE /* 036.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1F51BD02FC200B52FAE /* 037.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1CD1BD02FC200B52FAE /* 037.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1F61BD02FC200B52FAE /* 038.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1CE1BD02FC200B52FAE /* 038.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1F71BD02FC200B52FAE /* 039.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1CF1BD02FC200B52FAE /* 039.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1F81BD02FC200B52FAE /* 040.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80A0D1D01BD02FC200B52FAE /* 040.jpg */; settings = {ASSET_TAGS = (); }; };
+		80A0D1FC1BD0326400B52FAE /* DetailInvestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0D1FB1BD0326400B52FAE /* DetailInvestViewController.m */; settings = {ASSET_TAGS = (); }; };
+		80A0D2001BD0342900B52FAE /* VOInvestment.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0D1FF1BD0342900B52FAE /* VOInvestment.m */; settings = {ASSET_TAGS = (); }; };
+		C342EACB778D2F31E96726CB /* libPods-InvestShareUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DA1439414A9FA27B629ED4 /* libPods-InvestShareUITests.a */; };
+		CC5C3F07A621FA54D6FE0115 /* libPods-InvestShareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECD5F3B0EA0C871A1622928 /* libPods-InvestShareTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +82,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0441D0E9E6B4F38E75ED595A /* Pods-InvestShareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestShareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestShareTests/Pods-InvestShareTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0493FCDC83A37FB17C48C352 /* Pods-InvestShareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestShareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestShareTests/Pods-InvestShareTests.release.xcconfig"; sourceTree = "<group>"; };
 		4250F7001BCFFB09005641A2 /* InvestShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4250F7041BCFFB09005641A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4250F7061BCFFB09005641A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +100,60 @@
 		4250F7241BCFFB0A005641A2 /* InvestShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4250F7281BCFFB0A005641A2 /* InvestShareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestShareUITests.m; sourceTree = "<group>"; };
 		4250F72A1BCFFB0A005641A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73DA1439414A9FA27B629ED4 /* libPods-InvestShareUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestShareUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		800DD4E61BD0089400180039 /* InvestmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InvestmentsViewController.h; path = Controller/Investments/InvestmentsViewController.h; sourceTree = "<group>"; };
+		800DD4E71BD0089400180039 /* InvestmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InvestmentsViewController.m; path = Controller/Investments/InvestmentsViewController.m; sourceTree = "<group>"; };
+		800DD4EA1BD00DBF00180039 /* InvestmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InvestmentCell.h; path = Controller/Investments/InvestmentCell/InvestmentCell.h; sourceTree = "<group>"; };
+		800DD4EB1BD00DBF00180039 /* InvestmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InvestmentCell.m; path = Controller/Investments/InvestmentCell/InvestmentCell.m; sourceTree = "<group>"; };
+		800DD4ED1BD025AD00180039 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		800DD4EE1BD025AD00180039 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
+		80A0D1A91BD02FC100B52FAE /* 001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 001.jpg; sourceTree = "<group>"; };
+		80A0D1AA1BD02FC100B52FAE /* 002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 002.jpg; sourceTree = "<group>"; };
+		80A0D1AB1BD02FC100B52FAE /* 003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 003.jpg; sourceTree = "<group>"; };
+		80A0D1AC1BD02FC100B52FAE /* 004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 004.jpg; sourceTree = "<group>"; };
+		80A0D1AD1BD02FC100B52FAE /* 005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005.jpg; sourceTree = "<group>"; };
+		80A0D1AE1BD02FC100B52FAE /* 006.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 006.jpg; sourceTree = "<group>"; };
+		80A0D1AF1BD02FC100B52FAE /* 007.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 007.jpg; sourceTree = "<group>"; };
+		80A0D1B01BD02FC100B52FAE /* 008.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 008.jpg; sourceTree = "<group>"; };
+		80A0D1B11BD02FC100B52FAE /* 009.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 009.jpg; sourceTree = "<group>"; };
+		80A0D1B21BD02FC100B52FAE /* 010.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 010.jpg; sourceTree = "<group>"; };
+		80A0D1B31BD02FC100B52FAE /* 011.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 011.jpg; sourceTree = "<group>"; };
+		80A0D1B41BD02FC100B52FAE /* 012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 012.jpg; sourceTree = "<group>"; };
+		80A0D1B51BD02FC100B52FAE /* 013.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 013.jpg; sourceTree = "<group>"; };
+		80A0D1B61BD02FC100B52FAE /* 014.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 014.jpg; sourceTree = "<group>"; };
+		80A0D1B71BD02FC100B52FAE /* 015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 015.jpg; sourceTree = "<group>"; };
+		80A0D1B81BD02FC100B52FAE /* 016.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 016.jpg; sourceTree = "<group>"; };
+		80A0D1B91BD02FC100B52FAE /* 017.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 017.jpg; sourceTree = "<group>"; };
+		80A0D1BA1BD02FC100B52FAE /* 018.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 018.jpg; sourceTree = "<group>"; };
+		80A0D1BB1BD02FC100B52FAE /* 019.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 019.jpg; sourceTree = "<group>"; };
+		80A0D1BC1BD02FC100B52FAE /* 020.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 020.jpg; sourceTree = "<group>"; };
+		80A0D1BD1BD02FC100B52FAE /* 021.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 021.jpg; sourceTree = "<group>"; };
+		80A0D1BE1BD02FC100B52FAE /* 022.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 022.jpg; sourceTree = "<group>"; };
+		80A0D1BF1BD02FC100B52FAE /* 023.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 023.jpg; sourceTree = "<group>"; };
+		80A0D1C01BD02FC100B52FAE /* 024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 024.jpg; sourceTree = "<group>"; };
+		80A0D1C11BD02FC100B52FAE /* 025.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 025.jpg; sourceTree = "<group>"; };
+		80A0D1C21BD02FC100B52FAE /* 026.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 026.jpg; sourceTree = "<group>"; };
+		80A0D1C31BD02FC100B52FAE /* 027.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 027.jpg; sourceTree = "<group>"; };
+		80A0D1C41BD02FC100B52FAE /* 028.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 028.jpg; sourceTree = "<group>"; };
+		80A0D1C51BD02FC100B52FAE /* 029.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 029.jpg; sourceTree = "<group>"; };
+		80A0D1C61BD02FC100B52FAE /* 030.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 030.jpg; sourceTree = "<group>"; };
+		80A0D1C71BD02FC100B52FAE /* 031.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 031.jpg; sourceTree = "<group>"; };
+		80A0D1C81BD02FC100B52FAE /* 032.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 032.jpg; sourceTree = "<group>"; };
+		80A0D1C91BD02FC100B52FAE /* 033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 033.jpg; sourceTree = "<group>"; };
+		80A0D1CA1BD02FC100B52FAE /* 034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 034.jpg; sourceTree = "<group>"; };
+		80A0D1CB1BD02FC100B52FAE /* 035.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 035.jpg; sourceTree = "<group>"; };
+		80A0D1CC1BD02FC100B52FAE /* 036.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 036.jpg; sourceTree = "<group>"; };
+		80A0D1CD1BD02FC200B52FAE /* 037.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 037.jpg; sourceTree = "<group>"; };
+		80A0D1CE1BD02FC200B52FAE /* 038.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 038.jpg; sourceTree = "<group>"; };
+		80A0D1CF1BD02FC200B52FAE /* 039.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 039.jpg; sourceTree = "<group>"; };
+		80A0D1D01BD02FC200B52FAE /* 040.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 040.jpg; sourceTree = "<group>"; };
+		80A0D1FA1BD0326400B52FAE /* DetailInvestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailInvestViewController.h; path = Controller/DetailInvest/DetailInvestViewController.h; sourceTree = "<group>"; };
+		80A0D1FB1BD0326400B52FAE /* DetailInvestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailInvestViewController.m; path = Controller/DetailInvest/DetailInvestViewController.m; sourceTree = "<group>"; };
+		80A0D1FE1BD0342900B52FAE /* VOInvestment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VOInvestment.h; path = Model/VOInvestment.h; sourceTree = "<group>"; };
+		80A0D1FF1BD0342900B52FAE /* VOInvestment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VOInvestment.m; path = Model/VOInvestment.m; sourceTree = "<group>"; };
+		9ACBD30E5C9C9E75EED22E11 /* Pods-InvestShareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestShareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InvestShareUITests/Pods-InvestShareUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9ECD5F3B0EA0C871A1622928 /* libPods-InvestShareTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestShareTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3BCB0A7481D5E0142554638 /* Pods-InvestShareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InvestShareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InvestShareUITests/Pods-InvestShareUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5C3F07A621FA54D6FE0115 /* libPods-InvestShareTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +176,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C342EACB778D2F31E96726CB /* libPods-InvestShareUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AB4F54B7972BABC117FE8C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3BCB0A7481D5E0142554638 /* Pods-InvestShareUITests.debug.xcconfig */,
+				9ACBD30E5C9C9E75EED22E11 /* Pods-InvestShareUITests.release.xcconfig */,
+				0441D0E9E6B4F38E75ED595A /* Pods-InvestShareTests.debug.xcconfig */,
+				0493FCDC83A37FB17C48C352 /* Pods-InvestShareTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4250F6F71BCFFB09005641A2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +201,8 @@
 				4250F71C1BCFFB0A005641A2 /* InvestShareTests */,
 				4250F7271BCFFB0A005641A2 /* InvestShareUITests */,
 				4250F7011BCFFB09005641A2 /* Products */,
+				0AB4F54B7972BABC117FE8C0 /* Pods */,
+				D16C0FBE49CC4F9E1899E488 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +219,10 @@
 		4250F7021BCFFB09005641A2 /* InvestShare */ = {
 			isa = PBXGroup;
 			children = (
+				80A0D1FD1BD0341300B52FAE /* Model */,
+				800DD4ED1BD025AD00180039 /* Helper.h */,
+				800DD4EE1BD025AD00180039 /* Helper.m */,
+				4250F7361BD001BE005641A2 /* Controller */,
 				4250F7061BCFFB09005641A2 /* AppDelegate.h */,
 				4250F7071BCFFB09005641A2 /* AppDelegate.m */,
 				4250F7091BCFFB09005641A2 /* ViewController.h */,
@@ -117,6 +239,7 @@
 		4250F7031BCFFB09005641A2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				80A0D1A81BD02FC100B52FAE /* photo */,
 				4250F7041BCFFB09005641A2 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +261,108 @@
 				4250F72A1BCFFB0A005641A2 /* Info.plist */,
 			);
 			path = InvestShareUITests;
+			sourceTree = "<group>";
+		};
+		4250F7361BD001BE005641A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				80A0D1F91BD0322200B52FAE /* DetailInvest */,
+				4250F7371BD001C4005641A2 /* Investments */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4250F7371BD001C4005641A2 /* Investments */ = {
+			isa = PBXGroup;
+			children = (
+				800DD4E91BD00D9D00180039 /* InvestmentCell */,
+				800DD4E61BD0089400180039 /* InvestmentsViewController.h */,
+				800DD4E71BD0089400180039 /* InvestmentsViewController.m */,
+			);
+			name = Investments;
+			sourceTree = "<group>";
+		};
+		800DD4E91BD00D9D00180039 /* InvestmentCell */ = {
+			isa = PBXGroup;
+			children = (
+				800DD4EA1BD00DBF00180039 /* InvestmentCell.h */,
+				800DD4EB1BD00DBF00180039 /* InvestmentCell.m */,
+			);
+			name = InvestmentCell;
+			sourceTree = "<group>";
+		};
+		80A0D1A81BD02FC100B52FAE /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				80A0D1A91BD02FC100B52FAE /* 001.jpg */,
+				80A0D1AA1BD02FC100B52FAE /* 002.jpg */,
+				80A0D1AB1BD02FC100B52FAE /* 003.jpg */,
+				80A0D1AC1BD02FC100B52FAE /* 004.jpg */,
+				80A0D1AD1BD02FC100B52FAE /* 005.jpg */,
+				80A0D1AE1BD02FC100B52FAE /* 006.jpg */,
+				80A0D1AF1BD02FC100B52FAE /* 007.jpg */,
+				80A0D1B01BD02FC100B52FAE /* 008.jpg */,
+				80A0D1B11BD02FC100B52FAE /* 009.jpg */,
+				80A0D1B21BD02FC100B52FAE /* 010.jpg */,
+				80A0D1B31BD02FC100B52FAE /* 011.jpg */,
+				80A0D1B41BD02FC100B52FAE /* 012.jpg */,
+				80A0D1B51BD02FC100B52FAE /* 013.jpg */,
+				80A0D1B61BD02FC100B52FAE /* 014.jpg */,
+				80A0D1B71BD02FC100B52FAE /* 015.jpg */,
+				80A0D1B81BD02FC100B52FAE /* 016.jpg */,
+				80A0D1B91BD02FC100B52FAE /* 017.jpg */,
+				80A0D1BA1BD02FC100B52FAE /* 018.jpg */,
+				80A0D1BB1BD02FC100B52FAE /* 019.jpg */,
+				80A0D1BC1BD02FC100B52FAE /* 020.jpg */,
+				80A0D1BD1BD02FC100B52FAE /* 021.jpg */,
+				80A0D1BE1BD02FC100B52FAE /* 022.jpg */,
+				80A0D1BF1BD02FC100B52FAE /* 023.jpg */,
+				80A0D1C01BD02FC100B52FAE /* 024.jpg */,
+				80A0D1C11BD02FC100B52FAE /* 025.jpg */,
+				80A0D1C21BD02FC100B52FAE /* 026.jpg */,
+				80A0D1C31BD02FC100B52FAE /* 027.jpg */,
+				80A0D1C41BD02FC100B52FAE /* 028.jpg */,
+				80A0D1C51BD02FC100B52FAE /* 029.jpg */,
+				80A0D1C61BD02FC100B52FAE /* 030.jpg */,
+				80A0D1C71BD02FC100B52FAE /* 031.jpg */,
+				80A0D1C81BD02FC100B52FAE /* 032.jpg */,
+				80A0D1C91BD02FC100B52FAE /* 033.jpg */,
+				80A0D1CA1BD02FC100B52FAE /* 034.jpg */,
+				80A0D1CB1BD02FC100B52FAE /* 035.jpg */,
+				80A0D1CC1BD02FC100B52FAE /* 036.jpg */,
+				80A0D1CD1BD02FC200B52FAE /* 037.jpg */,
+				80A0D1CE1BD02FC200B52FAE /* 038.jpg */,
+				80A0D1CF1BD02FC200B52FAE /* 039.jpg */,
+				80A0D1D01BD02FC200B52FAE /* 040.jpg */,
+			);
+			path = photo;
+			sourceTree = "<group>";
+		};
+		80A0D1F91BD0322200B52FAE /* DetailInvest */ = {
+			isa = PBXGroup;
+			children = (
+				80A0D1FA1BD0326400B52FAE /* DetailInvestViewController.h */,
+				80A0D1FB1BD0326400B52FAE /* DetailInvestViewController.m */,
+			);
+			name = DetailInvest;
+			sourceTree = "<group>";
+		};
+		80A0D1FD1BD0341300B52FAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80A0D1FE1BD0342900B52FAE /* VOInvestment.h */,
+				80A0D1FF1BD0342900B52FAE /* VOInvestment.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D16C0FBE49CC4F9E1899E488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73DA1439414A9FA27B629ED4 /* libPods-InvestShareUITests.a */,
+				9ECD5F3B0EA0C871A1622928 /* libPods-InvestShareTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +389,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4250F7301BCFFB0A005641A2 /* Build configuration list for PBXNativeTarget "InvestShareTests" */;
 			buildPhases = (
+				F8D3610EC7541C705A9E03AF /* Check Pods Manifest.lock */,
 				4250F7151BCFFB0A005641A2 /* Sources */,
 				4250F7161BCFFB0A005641A2 /* Frameworks */,
 				4250F7171BCFFB0A005641A2 /* Resources */,
+				12D28CA26DE36C66BF7A479D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +409,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4250F7331BCFFB0A005641A2 /* Build configuration list for PBXNativeTarget "InvestShareUITests" */;
 			buildPhases = (
+				8282DC13C93F5A0746DA4821 /* Check Pods Manifest.lock */,
 				4250F7201BCFFB0A005641A2 /* Sources */,
 				4250F7211BCFFB0A005641A2 /* Frameworks */,
 				4250F7221BCFFB0A005641A2 /* Resources */,
+				F0AAB46B1222EFFCA262AB8C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,9 +472,49 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A0D1F81BD02FC200B52FAE /* 040.jpg in Resources */,
+				80A0D1F41BD02FC200B52FAE /* 036.jpg in Resources */,
+				80A0D1F11BD02FC200B52FAE /* 033.jpg in Resources */,
+				80A0D1DA1BD02FC200B52FAE /* 010.jpg in Resources */,
+				80A0D1D61BD02FC200B52FAE /* 006.jpg in Resources */,
+				80A0D1D41BD02FC200B52FAE /* 004.jpg in Resources */,
+				80A0D1DE1BD02FC200B52FAE /* 014.jpg in Resources */,
+				80A0D1EA1BD02FC200B52FAE /* 026.jpg in Resources */,
+				80A0D1D81BD02FC200B52FAE /* 008.jpg in Resources */,
+				80A0D1D91BD02FC200B52FAE /* 009.jpg in Resources */,
+				80A0D1F31BD02FC200B52FAE /* 035.jpg in Resources */,
+				80A0D1E11BD02FC200B52FAE /* 017.jpg in Resources */,
 				4250F7131BCFFB09005641A2 /* LaunchScreen.storyboard in Resources */,
+				80A0D1EB1BD02FC200B52FAE /* 027.jpg in Resources */,
+				80A0D1EF1BD02FC200B52FAE /* 031.jpg in Resources */,
+				80A0D1DC1BD02FC200B52FAE /* 012.jpg in Resources */,
+				80A0D1E51BD02FC200B52FAE /* 021.jpg in Resources */,
+				80A0D1E01BD02FC200B52FAE /* 016.jpg in Resources */,
+				80A0D1D71BD02FC200B52FAE /* 007.jpg in Resources */,
 				4250F7101BCFFB09005641A2 /* Assets.xcassets in Resources */,
+				80A0D1E71BD02FC200B52FAE /* 023.jpg in Resources */,
+				80A0D1F21BD02FC200B52FAE /* 034.jpg in Resources */,
+				80A0D1E31BD02FC200B52FAE /* 019.jpg in Resources */,
+				80A0D1ED1BD02FC200B52FAE /* 029.jpg in Resources */,
+				80A0D1E61BD02FC200B52FAE /* 022.jpg in Resources */,
+				80A0D1E21BD02FC200B52FAE /* 018.jpg in Resources */,
+				80A0D1E91BD02FC200B52FAE /* 025.jpg in Resources */,
+				80A0D1F01BD02FC200B52FAE /* 032.jpg in Resources */,
+				80A0D1EE1BD02FC200B52FAE /* 030.jpg in Resources */,
+				80A0D1D51BD02FC200B52FAE /* 005.jpg in Resources */,
+				80A0D1DD1BD02FC200B52FAE /* 013.jpg in Resources */,
+				80A0D1DF1BD02FC200B52FAE /* 015.jpg in Resources */,
 				4250F70E1BCFFB09005641A2 /* Main.storyboard in Resources */,
+				80A0D1F51BD02FC200B52FAE /* 037.jpg in Resources */,
+				80A0D1E41BD02FC200B52FAE /* 020.jpg in Resources */,
+				80A0D1D31BD02FC200B52FAE /* 003.jpg in Resources */,
+				80A0D1D21BD02FC200B52FAE /* 002.jpg in Resources */,
+				80A0D1F71BD02FC200B52FAE /* 039.jpg in Resources */,
+				80A0D1E81BD02FC200B52FAE /* 024.jpg in Resources */,
+				80A0D1DB1BD02FC200B52FAE /* 011.jpg in Resources */,
+				80A0D1F61BD02FC200B52FAE /* 038.jpg in Resources */,
+				80A0D1D11BD02FC200B52FAE /* 001.jpg in Resources */,
+				80A0D1EC1BD02FC200B52FAE /* 028.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,12 +534,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12D28CA26DE36C66BF7A479D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InvestShareTests/Pods-InvestShareTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8282DC13C93F5A0746DA4821 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0AAB46B1222EFFCA262AB8C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InvestShareUITests/Pods-InvestShareUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8D3610EC7541C705A9E03AF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4250F6FC1BCFFB09005641A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4250F70B1BCFFB09005641A2 /* ViewController.m in Sources */,
+				800DD4EF1BD025AD00180039 /* Helper.m in Sources */,
+				800DD4E81BD0089400180039 /* InvestmentsViewController.m in Sources */,
+				80A0D2001BD0342900B52FAE /* VOInvestment.m in Sources */,
+				800DD4EC1BD00DBF00180039 /* InvestmentCell.m in Sources */,
+				80A0D1FC1BD0326400B52FAE /* DetailInvestViewController.m in Sources */,
 				4250F7081BCFFB09005641A2 /* AppDelegate.m in Sources */,
 				4250F7051BCFFB09005641A2 /* main.m in Sources */,
 			);
@@ -412,6 +749,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InvestShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danilobatata.InvestShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +761,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InvestShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danilobatata.InvestShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +770,7 @@
 		};
 		4250F7311BCFFB0A005641A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0441D0E9E6B4F38E75ED595A /* Pods-InvestShareTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = InvestShareTests/Info.plist;
@@ -443,6 +783,7 @@
 		};
 		4250F7321BCFFB0A005641A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0493FCDC83A37FB17C48C352 /* Pods-InvestShareTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = InvestShareTests/Info.plist;
@@ -455,6 +796,7 @@
 		};
 		4250F7341BCFFB0A005641A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3BCB0A7481D5E0142554638 /* Pods-InvestShareUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = InvestShareUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -467,6 +809,7 @@
 		};
 		4250F7351BCFFB0A005641A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ACBD30E5C9C9E75EED22E11 /* Pods-InvestShareUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = InvestShareUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -496,6 +839,7 @@
 				4250F72F1BCFFB0A005641A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4250F7301BCFFB0A005641A2 /* Build configuration list for PBXNativeTarget "InvestShareTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +848,7 @@
 				4250F7321BCFFB0A005641A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4250F7331BCFFB0A005641A2 /* Build configuration list for PBXNativeTarget "InvestShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +857,7 @@
 				4250F7351BCFFB0A005641A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,15 @@
+PODS:
+  - KIF (3.3.0):
+    - KIF/Core (= 3.3.0)
+  - KIF/Core (3.3.0)
+  - OCMock (3.2)
+
+DEPENDENCIES:
+  - KIF (~> 3.0)
+  - OCMock (~> 3.1)
+
+SPEC CHECKSUMS:
+  KIF: 0a82046d06f3648799cac522d2d0f7934214caac
+  OCMock: 28def049ef47f996b515a8eeea958be7ccab2dbb
+
+COCOAPODS: 0.38.2

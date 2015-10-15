@@ -6,9 +6,14 @@
 //  Copyright © 2015 Danilo Batata. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+#import "VOInvestment.h"
+#import "InvestmentsViewController.h"
 
-@interface InvestShareTests : XCTestCase
+#import <XCTest/XCTest.h>
+#import <UIKit/UIKit.h>
+#import <KIF/KIF.h>
+
+@interface InvestShareTests : KIFTestCase
 
 @end
 
@@ -24,16 +29,49 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)test00firstRow {
+    UINavigationController *nav = (UINavigationController *) [UIApplication sharedApplication].keyWindow.rootViewController;
+    InvestmentsViewController *vc = nav.childViewControllers[0];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [tester tapRowAtIndexPath:indexPath inTableViewWithAccessibilityIdentifier:@"table"];
+    VOInvestment *investment = vc.investments[indexPath.row];
+    NSString *expectedName = investment.name;
+    
+    [tester waitForViewWithAccessibilityLabel:expectedName];
+    
+    [tester tapViewWithAccessibilityLabel:@"Back"];
+    [tester waitForViewWithAccessibilityLabel:@"Feed"];
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)test01secondRow {
+    UINavigationController *nav = (UINavigationController *) [UIApplication sharedApplication].keyWindow.rootViewController;
+    InvestmentsViewController *vc = nav.childViewControllers[0];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1 inSection:0];
+    [tester tapRowAtIndexPath:indexPath inTableViewWithAccessibilityIdentifier:@"table"];
+    VOInvestment *investment = vc.investments[indexPath.row];
+    NSString *expectedName = investment.name;
+    
+    [tester waitForViewWithAccessibilityLabel:expectedName];
+    
+    [tester tapViewWithAccessibilityLabel:@"Back"];
+    [tester waitForViewWithAccessibilityLabel:@"Feed"];
+}
+
+- (void)test02thirdRow {
+    UINavigationController *nav = (UINavigationController *) [UIApplication sharedApplication].keyWindow.rootViewController;
+    InvestmentsViewController *vc = nav.childViewControllers[0];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:2 inSection:0];
+    [tester tapRowAtIndexPath:indexPath inTableViewWithAccessibilityIdentifier:@"table"];
+    VOInvestment *investment = vc.investments[indexPath.row];
+    NSString *expectedName = investment.name;
+    
+    [tester waitForViewWithAccessibilityLabel:expectedName];
+    
+    [tester tapViewWithAccessibilityLabel:@"Back"];
+    [tester waitForViewWithAccessibilityLabel:@"Feed"];
 }
 
 @end
