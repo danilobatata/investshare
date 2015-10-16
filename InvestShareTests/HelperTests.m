@@ -2,12 +2,11 @@
 //  HelperTests.m
 //  InvestShare
 //
-//  Created by Mario Concilio on 10/16/15.
+//  Created by Danilo Batata on 10/16/15.
 //  Copyright © 2015 Danilo Batata. All rights reserved.
 //
 
 #import "Helper.h"
-#import <OCMock/OCMock.h>
 #import <XCTest/XCTest.h>
 
 @interface HelperTests : XCTestCase
@@ -74,6 +73,7 @@
 - (void)testRandomInvestments {
     NSArray *investments = [[Helper sharedInstance] randomInvestments];
     XCTAssertNotNil(investments, @"erro ao gerar array de investimentos");
+    XCTAssertGreaterThan(investments.count, 0);
 }
 
 @end
