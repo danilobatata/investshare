@@ -2,7 +2,7 @@
 //  InvestShareTests.m
 //  InvestShareTests
 //
-//  Created by Mario Concilio on 10/15/15.
+//  Created by Danilo Batata on 10/15/15.
 //  Copyright © 2015 Danilo Batata. All rights reserved.
 //
 
@@ -30,17 +30,25 @@
 }
 
 - (void)test00firstRow {
+    // pego view controller atual
     UINavigationController *nav = (UINavigationController *) [UIApplication sharedApplication].keyWindow.rootViewController;
     InvestmentsViewController *vc = nav.childViewControllers[0];
     
+    // investimento selecionado
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [tester tapRowAtIndexPath:indexPath inTableViewWithAccessibilityIdentifier:@"table"];
     VOInvestment *investment = vc.investments[indexPath.row];
+    
+    // nome esperado do investimento
     NSString *expectedName = investment.name;
     
+    // espero o nome
     [tester waitForViewWithAccessibilityLabel:expectedName];
     
+    // clica em voltar
     [tester tapViewWithAccessibilityLabel:@"Back"];
+    
+    // espera a tela inicial
     [tester waitForViewWithAccessibilityLabel:@"Feed"];
 }
 
