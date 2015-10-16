@@ -394,6 +394,7 @@
 				4250F7161BCFFB0A005641A2 /* Frameworks */,
 				4250F7171BCFFB0A005641A2 /* Resources */,
 				12D28CA26DE36C66BF7A479D /* Copy Pods Resources */,
+				F5C341CD279EC8672B91BA10 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -580,6 +581,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InvestShareUITests/Pods-InvestShareUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F5C341CD279EC8672B91BA10 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InvestShareTests/Pods-InvestShareTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F8D3610EC7541C705A9E03AF /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -749,7 +765,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InvestShare/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danilobatata.InvestShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -761,7 +777,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InvestShare/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danilobatata.InvestShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";

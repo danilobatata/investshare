@@ -32,4 +32,15 @@
     [super tearDown];
 }
 
+- (void)testCellDetailSegue {
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *table = app.tables[@"table"];
+    [[table.cells containingType:XCUIElementTypeStaticText identifier:@"Fernanda Gomes"].staticTexts[@"Risco B"] tap];
+    [app.navigationBars[@"Fernanda Gomes"].buttons[@"Feed"] tap];
+    [app.navigationBars[@"Luiz Morais"].buttons[@"Feed"] tap];
+    [[table.cells containingType:XCUIElementTypeStaticText identifier:@"Maria Martins"].staticTexts[@"Risco A"] swipeUp];
+    [app.navigationBars[@"Leonardo Alves"].buttons[@"Feed"] tap];
+    
+}
+
 @end

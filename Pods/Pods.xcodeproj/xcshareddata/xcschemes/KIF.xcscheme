@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4EDAA0934927B1D43E17B64102DC259E"
+               BlueprintIdentifier = "E6569FDA1C1358958D0928FD8A510ACD"
                BuildableName = "libKIF.a"
                BlueprintName = "KIF"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4EDAA0934927B1D43E17B64102DC259E"
+            BlueprintIdentifier = "E6569FDA1C1358958D0928FD8A510ACD"
             BuildableName = "libKIF.a"
             BlueprintName = "KIF"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,6 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E6569FDA1C1358958D0928FD8A510ACD"
+            BuildableName = "libKIF.a"
+            BlueprintName = "KIF"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
