@@ -33,14 +33,59 @@
 }
 
 - (void)testCellDetailSegue {
+    // inicia app
     XCUIApplication *app = [[XCUIApplication alloc] init];
     XCUIElement *table = app.tables[@"table"];
-    [[table.cells containingType:XCUIElementTypeStaticText identifier:@"Fernanda Gomes"].staticTexts[@"Risco B"] tap];
-    [app.navigationBars[@"Fernanda Gomes"].buttons[@"Feed"] tap];
-    [app.navigationBars[@"Luiz Morais"].buttons[@"Feed"] tap];
-    [[table.cells containingType:XCUIElementTypeStaticText identifier:@"Maria Martins"].staticTexts[@"Risco A"] swipeUp];
-    [app.navigationBars[@"Leonardo Alves"].buttons[@"Feed"] tap];
     
+    // pega a primeira cell
+    XCUIElement *firstCell = [table.cells elementBoundByIndex:0];
+    NSString *cellTitle = [[firstCell.staticTexts elementMatchingType:XCUIElementTypeStaticText identifier:@"nameLabel"] label];
+    [firstCell tap];
+    
+    // confere se o titulo da view eh o mesmo da cell
+    NSString *viewTitle = [[app.navigationBars.staticTexts elementBoundByIndex:0] label];
+    XCTAssertEqualObjects(cellTitle, viewTitle, @"o titulo da view difere do titulo da cell");
+    
+    // retorna para tableview
+    [app.navigationBars.buttons[@"Back"] tap];
+    
+    // confere se voltou pra tela anterior de Feed
+    viewTitle = [[app.navigationBars.staticTexts elementBoundByIndex:0] label];
+    XCTAssertEqualObjects(viewTitle, @"Feed", @"nao voltou para a tableview inicial");
+    
+    // pega a terceira cell
+    XCUIElement *thirdCell = [table.cells elementBoundByIndex:2];
+    cellTitle = [[thirdCell.staticTexts elementMatchingType:XCUIElementTypeStaticText identifier:@"nameLabel"] label];
+    [thirdCell tap];
+    
+    // confere se o titulo da view eh o mesmo da cell
+    viewTitle = [[app.navigationBars.staticTexts elementBoundByIndex:0] label];
+    XCTAssertEqualObjects(cellTitle, viewTitle, @"o titulo da view difere do titulo da cell");
+    
+    // retorna para tableview
+    [app.navigationBars.buttons[@"Back"] tap];
+    
+    // confere se voltou pra tela anterior de Feed
+    viewTitle = [[app.navigationBars.staticTexts elementBoundByIndex:0] label];
+    XCTAssertEqualObjects(viewTitle, @"Feed", @"nao voltou para a tableview inicial");
+    
+    [table swipeUp];
+
+    // pega a quinta cell
+    XCUIElement *fifithCell = [table.cells elementBoundByIndex:4];
+    cellTitle = [[fifithCell.staticTexts elementMatchingType:XCUIElementTypeStaticText identifier:@"nameLabel"] label];
+    [fifithCell tap];
+    
+    // confere se o titulo da view eh o mesmo da cell
+    viewTitle = [[app.navigationBars.staticTexts elementBoundByIndex:0] label];
+    XCTAssertEqualObjects(cellTitle, viewTitle, @"o titulo da view difere do titulo da cell");
+    
+    // retorna para tableview
+    [app.navigationBars.buttons[@"Back"] tap];
+    
+    // confere se voltou pra tela anterior de Feed
+    viewTitle = [[app.navigationBars.staticTexts elementBoundByIndex:0] label];
+    XCTAssertEqualObjects(viewTitle, @"Feed", @"nao voltou para a tableview inicial");
 }
 
 @end

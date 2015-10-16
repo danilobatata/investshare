@@ -13,8 +13,8 @@
 		4250F70E1BCFFB09005641A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250F70C1BCFFB09005641A2 /* Main.storyboard */; };
 		4250F7101BCFFB09005641A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4250F70F1BCFFB09005641A2 /* Assets.xcassets */; };
 		4250F7131BCFFB09005641A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250F7111BCFFB09005641A2 /* LaunchScreen.storyboard */; };
-		4250F71E1BCFFB0A005641A2 /* InvestShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250F71D1BCFFB0A005641A2 /* InvestShareTests.m */; };
 		4250F7291BCFFB0A005641A2 /* InvestShareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250F7281BCFFB0A005641A2 /* InvestShareUITests.m */; };
+		42A6C0AA1BD1626600DEDB43 /* HelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A6C0A91BD1626600DEDB43 /* HelperTests.m */; settings = {ASSET_TAGS = (); }; };
 		800DD4E81BD0089400180039 /* InvestmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800DD4E71BD0089400180039 /* InvestmentsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		800DD4EC1BD00DBF00180039 /* InvestmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 800DD4EB1BD00DBF00180039 /* InvestmentCell.m */; settings = {ASSET_TAGS = (); }; };
 		800DD4EF1BD025AD00180039 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 800DD4EE1BD025AD00180039 /* Helper.m */; settings = {ASSET_TAGS = (); }; };
@@ -95,11 +95,11 @@
 		4250F7121BCFFB09005641A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4250F7141BCFFB09005641A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4250F7191BCFFB0A005641A2 /* InvestShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4250F71D1BCFFB0A005641A2 /* InvestShareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestShareTests.m; sourceTree = "<group>"; };
 		4250F71F1BCFFB0A005641A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4250F7241BCFFB0A005641A2 /* InvestShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4250F7281BCFFB0A005641A2 /* InvestShareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvestShareUITests.m; sourceTree = "<group>"; };
 		4250F72A1BCFFB0A005641A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42A6C0A91BD1626600DEDB43 /* HelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperTests.m; sourceTree = "<group>"; };
 		73DA1439414A9FA27B629ED4 /* libPods-InvestShareUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InvestShareUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		800DD4E61BD0089400180039 /* InvestmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InvestmentsViewController.h; path = Controller/Investments/InvestmentsViewController.h; sourceTree = "<group>"; };
 		800DD4E71BD0089400180039 /* InvestmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InvestmentsViewController.m; path = Controller/Investments/InvestmentsViewController.m; sourceTree = "<group>"; };
@@ -248,7 +248,7 @@
 		4250F71C1BCFFB0A005641A2 /* InvestShareTests */ = {
 			isa = PBXGroup;
 			children = (
-				4250F71D1BCFFB0A005641A2 /* InvestShareTests.m */,
+				42A6C0A91BD1626600DEDB43 /* HelperTests.m */,
 				4250F71F1BCFFB0A005641A2 /* Info.plist */,
 			);
 			path = InvestShareTests;
@@ -633,7 +633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4250F71E1BCFFB0A005641A2 /* InvestShareTests.m in Sources */,
+				42A6C0AA1BD1626600DEDB43 /* HelperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

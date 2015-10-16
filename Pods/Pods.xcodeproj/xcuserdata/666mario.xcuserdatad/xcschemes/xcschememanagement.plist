@@ -19,9 +19,19 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-InvestShareUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2D32A3B8EBD187D27CEE51AD535FA5BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4A2CAA839F2722C796C6F1DFDC806B92</key>
 		<dict>
 			<key>primary</key>

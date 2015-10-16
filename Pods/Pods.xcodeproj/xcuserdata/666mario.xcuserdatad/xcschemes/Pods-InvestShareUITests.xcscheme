@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C998F61AB91C2E3AA05D9DB4'
-               BlueprintName = 'KIF'
+               BlueprintIdentifier = 'EFB9272FC8219443725782E1'
+               BlueprintName = 'Pods-InvestShareUITests'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libKIF.a'>
+               BuildableName = 'libPods-InvestShareUITests.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

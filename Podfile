@@ -12,6 +12,7 @@ target 'InvestShareTests', :exclusive => true do
 end
 
 target 'InvestShareUITests' do
+    pod 'OCMock', '~> 3.1'
 
 end
 

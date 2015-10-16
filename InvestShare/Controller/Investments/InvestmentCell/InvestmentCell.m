@@ -35,7 +35,7 @@
      *  Shadow
      */
     self.bkgView.layer.masksToBounds = NO;
-    self.bkgView.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.bkgView.layer.shadowColor = [UIColor grayColor].CGColor;
     self.bkgView.layer.shadowOffset = CGSizeZero;
     self.bkgView.layer.shadowOpacity = 2.0;
     self.bkgView.layer.shadowRadius = 2.0;
@@ -48,6 +48,8 @@
     self.profileImageView.layer.cornerRadius = 25.0;
     self.profileImageView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.profileImageView.layer.borderWidth = 0.5;
+    
+    self.nameLabel.accessibilityIdentifier = @"nameLabel";
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
