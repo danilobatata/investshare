@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class Investment, User;
 @interface InvestmentsViewController : UITableViewController
 
-@property (nonatomic, strong) NSArray *investments;
+@property (nonatomic, strong) User *user;
 
 @end

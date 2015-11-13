@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class VOInvestment;
+@class Investment;
 @interface InvestmentCell : UITableViewCell
 
-@property (nonatomic, strong) VOInvestment *investment;
+@property (nonatomic, strong) Investment *investment;
 
 @end

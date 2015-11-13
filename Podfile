@@ -2,6 +2,9 @@
 # platform :ios, '6.0'
 
 target 'InvestShare' do
+    pod 'MagicalRecord'
+    pod 'SSKeychain'
+    pod 'JSQMessagesViewController'
 
 end
 

@@ -9,15 +9,19 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+@class LoggedUser;
 @interface Helper : NSObject
 
 + (instancetype)sharedInstance;
-- (NSString *)randomName;
-- (UIImage *)randomProfileImage;
-- (NSString *)randomRisk;
-- (NSInteger)randomValueUntil:(NSInteger)value;
-- (NSString *)formatCurrencyFromValue:(NSInteger)value;
-- (NSString *)formatTimeFromValue:(NSInteger)value;
-- (NSArray *)randomInvestments;
++ (LoggedUser *)loggedUser;
++ (void)saveCustomObject:(id)obj forKey:(NSString *)key;
++ (NSString *)randomName;
++ (NSString *)randomProfileImage;
++ (NSString *)randomRisk;
++ (NSInteger)randomValueUntil:(NSInteger)value;
++ (NSString *)formatCurrencyFromValue:(NSInteger)value;
++ (NSString *)formatTimeFromValue:(NSInteger)value;
++ (NSString *)initialsFromName:(NSString *)name;
++ (UIColor *)randomColor;
 
 @end

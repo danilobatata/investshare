@@ -6,6 +6,9 @@
 //
 
 #import "AppDelegate.h"
+#import "Macros.h"
+#import "APIService.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface AppDelegate ()
 
@@ -15,6 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [MagicalRecord setupCoreDataStack];
+    [self defineRootViewControllerAnimated:YES];
     
     return YES;
 }
@@ -39,6 +44,33 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)defineRootViewControllerAnimated:(BOOL)animated {
+    UIViewController *vc = nil;
+    if ([NSUserDefaults objectForKey:kProfileInfo]) {
+        vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
+        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    }
+    else {
+        vc = [[UIStoryboard storyboardWithName:@"Welcome" bundle:nil] instantiateInitialViewController];
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+    }
+    
+    if (animated) {
+        [UIView transitionWithView:self.window
+                          duration:0.3
+                           options:UIViewAnimationOptionTransitionCrossDissolve
+                        animations:^{
+                            self.window.rootViewController = vc;
+                        }
+                        completion:NULL];
+    }
+    else {
+        self.window.rootViewController = vc;
+    }
 }
 
 @end

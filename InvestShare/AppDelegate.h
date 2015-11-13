@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  InvestShare
 //
-//  Created by Mario Concilio on 10/15/15.
+//  Created by Danilo Batata on 10/15/15.
 //  Copyright © 2015 Danilo Batata. All rights reserved.
 //
 
@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+- (void)defineRootViewControllerAnimated:(BOOL)animated;
 
 @end
 

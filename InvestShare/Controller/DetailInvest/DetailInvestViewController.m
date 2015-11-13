@@ -7,7 +7,6 @@
 //
 
 #import "DetailInvestViewController.h"
-#import "VOInvestment.h"
 
 @interface DetailInvestViewController ()
 
@@ -17,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = self.investment.name;
+//    self.navigationItem.title = self.investment.name;
 }
 
 - (void)didReceiveMemoryWarning {

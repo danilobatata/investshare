@@ -7,13 +7,20 @@
 //
 
 #import "Helper.h"
+#import "Macros.h"
 #import "InvestmentsViewController.h"
 #import "InvestmentCell.h"
 #import "DetailInvestViewController.h"
+#import "Investment.h"
+#import "SuitabilityViewController.h"
+#import "APIService.h"
 
-@interface InvestmentsViewController ()
+#define kDetailSegue        @"detailSegue"
+#define kSuitabilitySegue   @"suitabilitySegue"
 
+@interface InvestmentsViewController () <SuitabilityDelegate>
 
+@property (nonatomic, strong) NSArray<Investment *> *investments;
 
 @end
 
@@ -24,16 +31,19 @@ static NSString *const CellID = @"CellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tableView.backgroundColor = [UIColor colorWithRed:(240./255.)
-                                                     green:(240./255.)
-                                                      blue:(240./255.)
-                                                     alpha:1.0];
+    self.tableView.backgroundColor = UIColorFromRGB(240, 240, 240);
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.accessibilityIdentifier = @"table";
     self.tableView.userInteractionEnabled = YES;
     
-    self.investments = [[Helper sharedInstance] randomInvestments];
     self.navigationItem.title = @"Feed";
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    [self getAllInvestments];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,12 +51,43 @@ static NSString *const CellID = @"CellID";
     // Dispose of any resources that can be recreated.
 }
 
+- (void)getAllInvestments {
+    if (self.user) {
+        [[APIService sharedInstance] getAllInvestmentsFromUser:self.user callback:^(NSArray<Investment *> *investments, NSError *error) {
+            if (!error) {
+                self.investments = investments;
+            }
+            else {
+                self.investments = [[NSArray alloc] init];
+            }
+        }];
+    }
+    else {
+        [[APIService sharedInstance] getAllInvestments:^(NSArray<Investment *> *investments, NSError *error) {
+            if (!error) {
+                self.investments = investments;
+            }
+            else {
+                self.investments = [[NSArray alloc] init];
+            }
+        }];
+    }
+    
+    [self.tableView reloadData];
+}
+
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"detailSegue"]) {
+    if ([segue.identifier isEqualToString:kDetailSegue]) {
         DetailInvestViewController *vc = segue.destinationViewController;
-        VOInvestment *investment = self.investments[[sender intValue]];
-        vc.investment = investment;
+        
+//        VOInvestment *investment = self.investments[[sender intValue]];
+//        vc.investment = investment;
+    }
+    else if ([segue.identifier isEqualToString:kSuitabilitySegue]) {
+        UINavigationController *nav = segue.destinationViewController;
+        SuitabilityViewController *vc = (id)nav.childViewControllers[0];
+        vc.delegate = self;
     }
 }
 
@@ -56,69 +97,48 @@ static NSString *const CellID = @"CellID";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return self.investments.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     InvestmentCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID forIndexPath:indexPath];
-    VOInvestment *investment = self.investments[indexPath.row];
-    cell.investment = investment;
-    
-    UIView *view = [[UIView alloc] init];
-    view.backgroundColor = [UIColor blueColor];
-    cell.selectedBackgroundView = view;
+    Investment *investment = self.investments[indexPath.row];
+    [cell setInvestment:investment];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
 
-#pragma mark - TableView Delegate
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self performSegueWithIdentifier:@"detailSegue" sender:@(indexPath.row)];
+#pragma mark - Suitability Delegate
+- (void)suitabilityDidCancel {
+    [self getAllInvestments];
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)suitabilityDidDismissWithRisk:(NSInteger)risk time:(NSInteger)time income:(NSInteger)income value:(NSInteger)value {
+    if (self.user) {
+        [[APIService sharedInstance] fetchInvestmentsFromUser:self.user withRisk:risk time:time income:income value:value callback:^(NSArray<Investment *> *investments, NSError *error) {
+            if (!error) {
+                self.investments = investments;
+            }
+            else {
+                self.investments = investments;
+            }
+            
+            [self.tableView reloadData];
+        }];
+    }
+    else {
+        [[APIService sharedInstance] fetchInvestmentsWithRisk:risk time:time income:income value:value callback:^(NSArray<Investment *> *investments, NSError *error) {
+            if (!error) {
+                self.investments = investments;
+            }
+            else {
+                self.investments = investments;
+            }
+            
+            [self.tableView reloadData];
+        }];
+    }
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -27,7 +27,7 @@
 
 // testa se retorna um nome e sobrenome nao nulo
 - (void)testRandomName {
-    NSString *name = [[Helper sharedInstance] randomName];
+    NSString *name = [Helper randomName];
     XCTAssertNotNil(name, @"nome nao pode ser nulo");
     
     NSArray *array = [name componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
@@ -37,12 +37,12 @@
 // testa se gera um valor aleatorio menor do que o passado como parametro e maior do que zero
 - (void)testRandomValue {
     NSInteger i = 100;
-    NSInteger random = [[Helper sharedInstance] randomValueUntil:i];
+    NSInteger random = [Helper randomValueUntil:i];
     XCTAssertGreaterThan(random, 0, @"numero gerado deve ser maior do que zero");
     XCTAssertLessThanOrEqual(random, i, @"numero gerado deve ser menor ou igual do que i");
     
     i = 999999;
-    random = [[Helper sharedInstance] randomValueUntil:i];
+    random = [Helper randomValueUntil:i];
     XCTAssertGreaterThan(random, 0, @"numero gerado deve ser maior do que zero");
     XCTAssertLessThanOrEqual(random, i, @"numero gerado deve ser menor ou igual do que i");
 }
@@ -50,30 +50,23 @@
 // testa a formatacao de um int em moeda R$XXX,XX
 - (void)testFormatCurrency {
     NSInteger i = 100;
-    NSString *currency = [[Helper sharedInstance] formatCurrencyFromValue:i];
+    NSString *currency = [Helper formatCurrencyFromValue:i];
     XCTAssertEqualObjects(currency, @"R$100,00");
     
     i = 100000;
-    currency = [[Helper sharedInstance] formatCurrencyFromValue:i];
+    currency = [Helper formatCurrencyFromValue:i];
     XCTAssertEqualObjects(currency, @"R$100.000,00");
 }
 
 // testa o tempo gerado em meses e sua formatacao
 - (void)testFormatTimeFromValue {
     NSInteger months = 24;
-    NSString *time = [[Helper sharedInstance] formatTimeFromValue:months];
+    NSString *time = [Helper formatTimeFromValue:months];
     XCTAssertEqualObjects(time, @"2 anos");
     
     months = 10;
-    time = [[Helper sharedInstance] formatTimeFromValue:months];
+    time = [Helper formatTimeFromValue:months];
     XCTAssertEqualObjects(time, @"10 meses");
-}
-
-// testa se gera investimentos automaticos
-- (void)testRandomInvestments {
-    NSArray *investments = [[Helper sharedInstance] randomInvestments];
-    XCTAssertNotNil(investments, @"erro ao gerar array de investimentos");
-    XCTAssertGreaterThan(investments.count, 0);
 }
 
 @end
