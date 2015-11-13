@@ -4,17 +4,47 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>KIF.xcscheme_^#shared#^_</key>
+		<key>JSQMessagesViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>OCMock.xcscheme_^#shared#^_</key>
+		<key>JSQSystemSoundPlayer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-InvestShareTests.xcscheme_^#shared#^_</key>
+		<key>KIF.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MagicalRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>OCMock.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-InvestShare.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-InvestShareTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-InvestShareUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SSKeychain.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3B2F785D451300A9B5E12E52F0B1E699</key>
+		<key>2D32A3B8EBD187D27CEE51AD535FA5BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4EDAA0934927B1D43E17B64102DC259E</key>
+		<key>2EFEDBB649146422B0A076290AB959DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8BC4B7D712243CA04BBDEC2CCB6938D6</key>
+		<key>4A2CAA839F2722C796C6F1DFDC806B92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6CD72EBA655AD61991863324DEF7B562</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>763D82EA0D4C466F8EFF828B95D3C105</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5FB4EE8565DA51C9CD7ECB31CE7CD80</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C28C8632C44E8FED1EF2DF7C664EE0A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D54AB3ECEB9A8FBA15D4F73CBE326692</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D607CE439EBD256738A38E8D3933E56F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
